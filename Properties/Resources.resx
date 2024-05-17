@@ -127,6 +127,9 @@
   <data name="PlayerStand" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PlayerStand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MonsterStrongDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MonsterStrongDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MonsterPunchRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MonsterPunchRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,8 +142,8 @@
   <data name="playerDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\playerDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MonsterStrongDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MonsterStrongDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PlayerRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PlayerRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="monsterUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\monsterUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,6 +157,9 @@
   <data name="monsterRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\monsterRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Klava" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Klava.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="PlayerRightPunch" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PlayerRightPunch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -163,9 +169,6 @@
   <data name="MonsterPunchLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MonsterPunchLeft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PlayerRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PlayerRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MonsterStrongRightt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MonsterStrongRightt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -174,6 +177,9 @@
   </data>
   <data name="playerDead" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\playerDead.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Klava2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Klava2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MonsterStrongDownn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MonsterStrongDownn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,10 +217,7 @@
   <data name="monsterStrongUpp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\monsterStrongUpp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Klava" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Klava.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Klava2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Klava2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Space" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Space.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

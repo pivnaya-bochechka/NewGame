@@ -43,7 +43,7 @@ namespace NewGame
 
         private void MainTimerEvent(object sender, EventArgs e)
         {
-            if (score == 30)
+            if (score == 40)
             {
                 this.Close();
                 ContinuationHardLevel gameBossWindow = new ContinuationHardLevel();
