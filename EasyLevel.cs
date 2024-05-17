@@ -4,13 +4,14 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace NewGame
 {
-    public partial class Form1 : Form
+    public partial class EasyLevel : Form
     {
         bool goLeft, goRight, goUp, goDown, gameOver;
         string facing = "up";
@@ -22,15 +23,12 @@ namespace NewGame
         Random randNum = new Random();
 
         List<PictureBox> monstersList = new List<PictureBox>();
-        public Form1()
+        public EasyLevel()
         {
             InitializeComponent();
             RestartGame();
 
-            var hpTimer = new Timer();
             hpTimer.Tick += new EventHandler(hpTimer_Tick);
-            hpTimer.Interval = 15000;
-            hpTimer.Start();
         }
 
         private void hpTimer_Tick(object sender, EventArgs e)
@@ -43,6 +41,13 @@ namespace NewGame
 
         private void MainTimerEvent(object sender, EventArgs e)
         {
+            if (score == 15)
+            {
+                this.Close();
+                ContinuationEasyLevel gameBossWindow = new ContinuationEasyLevel();
+                gameBossWindow.Show();
+            }
+
             if (playerHealth > 1)
             {
                 healthBar.Value = playerHealth;
@@ -149,7 +154,6 @@ namespace NewGame
                             monstersList.Remove((PictureBox)x);
                             MakeMonsters();
                         }
-
                     }
                 }
             }
@@ -246,6 +250,7 @@ namespace NewGame
             monster.Left = randNum.Next(0, 872);
             monster.Top = randNum.Next(0, 600);
             monster.SizeMode = PictureBoxSizeMode.AutoSize;
+            monster.BackColor = Color.Transparent;
             monstersList.Add(monster);
             this.Controls.Add(monster);
             player.BringToFront();

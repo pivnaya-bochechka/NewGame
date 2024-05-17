@@ -1,16 +1,16 @@
 ﻿namespace NewGame
 {
-    partial class Form1
+    partial class HardLevel
     {
         /// <summary>
-        /// Обязательная переменная конструктора.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Освободить все используемые ресурсы.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,11 +20,11 @@
             base.Dispose(disposing);
         }
 
-        #region Код, автоматически созданный конструктором форм Windows
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Требуемый метод для поддержки конструктора — не изменяйте 
-        /// содержимое этого метода с помощью редактора кода.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -35,6 +35,7 @@
             this.healthBar = new System.Windows.Forms.ProgressBar();
             this.player = new System.Windows.Forms.PictureBox();
             this.GameTimer = new System.Windows.Forms.Timer(this.components);
+            this.hpTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,10 +44,10 @@
             this.txtAmmo.AutoSize = true;
             this.txtAmmo.BackColor = System.Drawing.Color.Transparent;
             this.txtAmmo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtAmmo.Location = new System.Drawing.Point(23, 20);
+            this.txtAmmo.Location = new System.Drawing.Point(21, 18);
             this.txtAmmo.Name = "txtAmmo";
             this.txtAmmo.Size = new System.Drawing.Size(119, 24);
-            this.txtAmmo.TabIndex = 0;
+            this.txtAmmo.TabIndex = 1;
             this.txtAmmo.Text = "Патроны: 0";
             // 
             // txtScore
@@ -54,10 +55,10 @@
             this.txtScore.AutoSize = true;
             this.txtScore.BackColor = System.Drawing.Color.Transparent;
             this.txtScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtScore.Location = new System.Drawing.Point(23, 44);
+            this.txtScore.Location = new System.Drawing.Point(21, 42);
             this.txtScore.Name = "txtScore";
             this.txtScore.Size = new System.Drawing.Size(127, 24);
-            this.txtScore.TabIndex = 1;
+            this.txtScore.TabIndex = 2;
             this.txtScore.Text = "Убийства: 0";
             // 
             // label1
@@ -65,18 +66,18 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(23, 68);
+            this.label1.Location = new System.Drawing.Point(21, 66);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(121, 24);
-            this.label1.TabIndex = 2;
+            this.label1.TabIndex = 3;
             this.label1.Text = "Здоровье: ";
             // 
             // healthBar
             // 
-            this.healthBar.Location = new System.Drawing.Point(27, 95);
+            this.healthBar.Location = new System.Drawing.Point(25, 93);
             this.healthBar.Name = "healthBar";
             this.healthBar.Size = new System.Drawing.Size(152, 23);
-            this.healthBar.TabIndex = 3;
+            this.healthBar.TabIndex = 4;
             this.healthBar.Value = 100;
             // 
             // player
@@ -87,7 +88,7 @@
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(90, 150);
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.player.TabIndex = 4;
+            this.player.TabIndex = 5;
             this.player.TabStop = false;
             // 
             // GameTimer
@@ -96,13 +97,17 @@
             this.GameTimer.Interval = 20;
             this.GameTimer.Tick += new System.EventHandler(this.MainTimerEvent);
             // 
-            // Form1
+            // hpTimer
+            // 
+            this.hpTimer.Enabled = true;
+            this.hpTimer.Interval = 10000;
+            // 
+            // HardLevel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::NewGame.Properties.Resources.Fon__1_;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(856, 561);
             this.Controls.Add(this.player);
             this.Controls.Add(this.healthBar);
@@ -110,8 +115,8 @@
             this.Controls.Add(this.txtScore);
             this.Controls.Add(this.txtAmmo);
             this.DoubleBuffered = true;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "HardLevel";
+            this.Text = "HardLevel";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
@@ -128,6 +133,6 @@
         private System.Windows.Forms.ProgressBar healthBar;
         private System.Windows.Forms.PictureBox player;
         private System.Windows.Forms.Timer GameTimer;
+        private System.Windows.Forms.Timer hpTimer;
     }
 }
-

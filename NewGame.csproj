@@ -47,16 +47,97 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bullet.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="ContinuationEasyLevel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ContinuationEasyLevel.Designer.cs">
+      <DependentUpon>ContinuationEasyLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContinuationHardLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContinuationHardLevel.Designer.cs">
+      <DependentUpon>ContinuationHardLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EasyLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EasyLevel.Designer.cs">
+      <DependentUpon>EasyLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameBossEasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameBossEasy.Designer.cs">
+      <DependentUpon>GameBossEasy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameBossHard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameBossHard.Designer.cs">
+      <DependentUpon>GameBossHard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameMenu.Designer.cs">
+      <DependentUpon>GameMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HardLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HardLevel.Designer.cs">
+      <DependentUpon>HardLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntroductionEasyLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntroductionEasyLevel.Designer.cs">
+      <DependentUpon>IntroductionEasyLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntroductionHardLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntroductionHardLevel.Designer.cs">
+      <DependentUpon>IntroductionHardLevel.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="ContinuationEasyLevel.resx">
+      <DependentUpon>ContinuationEasyLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContinuationHardLevel.resx">
+      <DependentUpon>ContinuationHardLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EasyLevel.resx">
+      <DependentUpon>EasyLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameBossEasy.resx">
+      <DependentUpon>GameBossEasy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameBossHard.resx">
+      <DependentUpon>GameBossHard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameMenu.resx">
+      <DependentUpon>GameMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HardLevel.resx">
+      <DependentUpon>HardLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntroductionEasyLevel.resx">
+      <DependentUpon>IntroductionEasyLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntroductionHardLevel.resx">
+      <DependentUpon>IntroductionHardLevel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -116,6 +197,69 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Hp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FonMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonsterBlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonsterStand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonsterPunchRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonsterPunchLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayerBlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayerStand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayerRightPunch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayerLeftPunch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FonBoss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonsterStrongRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonsterStrongLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonsterStrongDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonsterStrongUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monsterStrongUp %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonsterStrongLeftt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonsterStrongRightt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonsterStrongDownn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monsterStrongUpp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Klava.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Klava2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
